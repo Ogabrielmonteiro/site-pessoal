@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    
+}
+
+.botaoMenu , .linavbar{
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.linavbar{
+    border: 2px inset white;
+    border-radius: 25px;
+    padding: 9px 30px;
+    background-color: rgba(0,0,0,0.6) ;
+}
+
+a{
+    color: white;
+}
+
+.linavbar:hover{
+    color: gray;
+    transition: 0.5s;
+    font-size:20px ;
+}
+
+.login{
+    margin-left: 250px;
+}
+
+.containerNav{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.containerNav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+
+.navbarIcon{
+    width: 80px;
+    height: 80px;
+    margin-right: 150px;
+    display: flex;
+    
+}
+
+.videoBack{
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
