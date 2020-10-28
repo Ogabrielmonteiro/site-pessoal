@@ -36,7 +36,6 @@ body{
 
 .containerNav{
     width: 100%;
-    /* height: 15vh; */
     display: flex;
     align-items: center;
 }
@@ -112,27 +111,41 @@ h3 {
     background-repeat: no-repeat;
 }
 
-.historiaGame{
-    /* display: grid; 
-    grid-template-columns: 1fr ;  */
-    background-color: #1a1a1a; 
-    height: 50vh;  
-}
-
-.sobreHistoria{
-    background-color: #1a1a1a;
+.containerHist{
+    width: 70%;
     display: flex;
     align-items: center;
-
+    justify-content: center;
 }
 
-.sobreHistoria h3{
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloGame{
+    margin-bottom: 80px;
+}
+
+.historia-cont{
+    display: flex;
+    color: white;
+    margin-top: 150px;
+}
+.sobreHistoria h1{
     display: flex;
     justify-content: center;
     color: white;
-    margin-bottom: 150px;
 }
 
-.sobreHistoria p{
-    color: white;
+.imgHistoria{
+    width: 50vh;
+    border-radius: 10px;
+}
+
+.textoHistoria{
+    display: flex;
+    align-items: center;
+    width: 50%;
 }
