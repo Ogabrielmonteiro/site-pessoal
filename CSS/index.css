@@ -34,11 +34,11 @@ body{
     font-size: 20px;
 }
 
-.containerNav{
+/* .containerNav{
     width: 100%;
     display: flex;
     align-items: center;
-}
+} */
 
 .containerNav ul {
     display: flex;
@@ -122,6 +122,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 120px;
 }
 
 .tituloGame{
@@ -140,12 +141,36 @@ h3 {
 }
 
 .imgHistoria{
-    width: 50vh;
+    width: 40vh;
     border-radius: 10px;
 }
 
 .textoHistoria{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 60%;
+}
+
+.textoHistoria h2{
+    
+}
+
+.musica{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.direitos{
+    background-color: black;
+    height: 4vh;
+    margin-top: 40px;
+}
+
+.direitos p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    
 }
