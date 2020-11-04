@@ -5,11 +5,26 @@
     outline-style: none;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
-    
+    cursor: url(https://cur.cursors-4u.net/others/oth-9/oth831.cur), auto !important;
 }
 
 body{
     background-color: #1a1a1a;
+}
+
+@font-face{
+    font-family: headline;
+    src: url(../fonte/HeadlinerNo45DEMO.woff);
+}
+
+@font-face{
+    font-family: navfonte;
+    src: url(../fonte/Deadlist.woff);
+}
+
+@font-face{
+    font-family: textofonte;
+    src: url(../fonte/deadpackDEMO.woff);
 }
 
 .navbar {
@@ -34,11 +49,6 @@ body{
     font-size: 20px;
 }
 
-/* .containerNav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-} */
 
 .containerNav ul {
     display: flex;
@@ -46,12 +56,15 @@ body{
 
 a {
     color: grey;
+    font-family: navfonte;
+    font-size: 20px;
+    letter-spacing: 3px;
 }
 
 
 .linavbar {  
     margin-left: 50px;
-    padding: 15px 15px;
+    padding: 15px 20px;
     border-radius: 30px;
     border: 4px solid white;
     background-color: transparent;
@@ -62,7 +75,7 @@ a {
 
 .linavbar:hover{
     transition: 0.5s;
-    padding: 15px 30px;
+    padding: 15px 35px;
 }
 
 
@@ -92,18 +105,30 @@ a {
     background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
-    max-width: 70%;
+    width: 85%;
     align-items: center;
-    
+    margin-top: -25px;
 }
 
-.sobreGame p,
-h3 {
+.sobreGame h3 {
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    font-family: headline;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.sobreGame p{
+    color: rgb(139, 139, 139);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: 'Dosis', sans-serif;
 }
 
 .historiimg{
@@ -126,14 +151,17 @@ h3 {
 }
 
 .tituloGame{
-    margin-bottom: 80px;
+    font-family: headline;
+    font-size: 60px;
+    letter-spacing: 5px;
 }
 
 .historia-cont{
     display: flex;
     color: white;
-    margin-top: 150px;
+    margin-top: 70px;
 }
+
 .sobreHistoria h1{
     display: flex;
     justify-content: center;
@@ -147,18 +175,64 @@ h3 {
 
 .textoHistoria{
     display: flex;
-    align-items: center;
+    justify-content: center;
     width: 60%;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 30px;
+    text-align: center;
+}
+.textoHistoria p{
+    font-family: 'Dosis', sans-serif;
+    color: rgb(139, 139, 139);
 }
 
 .textoHistoria h2{
-    
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: headline;
+    letter-spacing: 4px;
+}
+
+.curiosidadediv{
+    display: flex;
+    justify-content: center;
+}
+.curiosidadeimg{
+    max-width: 95%;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .musica{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 35px;
+    
+}
+
+.titulomusica{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: headline;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.paragrafomusica{
+    display: flex;
+    justify-content: center;
+}
+
+.paragrafomusica p{
+    color: rgb(139, 139, 139);
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Dosis', sans-serif;
 }
 
 .direitos{
@@ -174,3 +248,4 @@ h3 {
     font-size: 20px;
     
 }
+
