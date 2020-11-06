@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    cursor: url(https://cur.cursors-4u.net/others/oth-9/oth831.cur), auto !important;
+}
+
+body{
+    background-image: url(../imagem/BackLogin.jpg);
+    background-size: cover;
+}
+
+/* Fontes do site */
+@font-face{
+    font-family: headline;
+    src: url(../fonte/HeadlinerNo45DEMO.woff);
+}
+
+@font-face{
+    font-family: navfonte;
+    src: url(../fonte/Deadlist.woff);
+}
+
+@font-face{
+    font-family: textofonte;
+    src: url(../fonte/deadpackDEMO.woff);
+}
+/* Imagem de fundo login */
+
+.divbackimg{
+    display: flex;
+    position: relative;
+}
+
+.backimg{
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Para descer devagar o site */
+html {
+    scroll-behavior: smooth;
+}
+
+.containerNav {
+    position: absolute;
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 2;
+    font-size: 20px;
+}
+
+.containerNav ul {
+    display: flex;
+}
+
+a {
+    color: grey;
+    font-family: navfonte;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.linavbar {  
+    margin-left: 50px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 4px solid white;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbarIcon {
+    width: 70px;
+}
+
+.linavbar:hover{
+    transition: 0.5s;
+    padding: 15px 35px;
+}
+
+.divlogin{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 150px;
+    width: 50px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.direitos{
+    background-color: black;
+    height: 4vh;
+    margin-top: 94vh;
+}
+
+.direitos p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}

@@ -8,10 +8,31 @@
     cursor: url(https://cur.cursors-4u.net/others/oth-9/oth831.cur), auto !important;
 }
 
+/* Começo da barra lateral */
+
+/* Altura da barra */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Cor da barra */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+  
+/* Hover para trocar a cor da barra */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Fim da barra lateral */
+
+/* Cor de fundo do site */
 body{
     background-color: #1a1a1a;
 }
 
+/* Fontes do site */
 @font-face{
     font-family: headline;
     src: url(../fonte/HeadlinerNo45DEMO.woff);
@@ -27,15 +48,16 @@ body{
     src: url(../fonte/deadpackDEMO.woff);
 }
 
+/* Para descer devagar o site */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.historia:hover{
-    transition: 0.5s;
 }
 
 .containerNav {
@@ -49,7 +71,6 @@ body{
     font-size: 20px;
 }
 
-
 .containerNav ul {
     display: flex;
 }
@@ -60,7 +81,6 @@ a {
     font-size: 20px;
     letter-spacing: 3px;
 }
-
 
 .linavbar {  
     margin-left: 50px;
@@ -73,21 +93,23 @@ a {
     transition: 0.5s;
 }
 
+.navbarIcon {
+    width: 70px;
+}
+
 .linavbar:hover{
     transition: 0.5s;
     padding: 15px 35px;
 }
 
-
+/* Video de inicio */
 .videoBack {
     position: relative;
     width: 100%;
 }
 
-.navbarIcon {
-    width: 70px;
-}
 
+/* História do vírus */
 .Sobre {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -111,7 +133,7 @@ a {
 }
 
 .sobreGame h3 {
-    color: white;
+    color: #0DEBD4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,11 +153,17 @@ a {
     font-family: 'Dosis', sans-serif;
 }
 
+/* Imagem da linha do tempo */
+.divhistoria{
+    display: flex;
+    justify-content: center;
+}
 .historiimg{
     max-width: 100%;
     background-repeat: no-repeat;
 }
 
+/* Historia dos personagens */
 .containerHist{
     width: 70%;
     display: flex;
@@ -165,12 +193,15 @@ a {
 .sobreHistoria h1{
     display: flex;
     justify-content: center;
-    color: white;
+    color: #0DEBD4;
+    
+    
 }
 
 .imgHistoria{
     width: 40vh;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    -webkit-box-shadow: 13px 10px 0px 1px rgba(218,76,169,1);
 }
 
 .textoHistoria{
@@ -185,6 +216,7 @@ a {
 .textoHistoria p{
     font-family: 'Dosis', sans-serif;
     color: rgb(139, 139, 139);
+    font-size: 17px;
 }
 
 .textoHistoria h2{
@@ -192,8 +224,13 @@ a {
     font-size: 40px;
     font-family: headline;
     letter-spacing: 4px;
+    background-color: #DA4CA9;
+    width: 150px;
+    height: 50px;
+    -webkit-box-shadow: 11px 10px 0px 1px rgba(13,235,212,1);
 }
 
+/* Imagem sobre curiosidades */
 .curiosidadediv{
     display: flex;
     justify-content: center;
@@ -205,6 +242,7 @@ a {
     margin-top: 50px;
 }
 
+/* Musica do game */
 .musica{
     display: flex;
     justify-content: center;
@@ -215,7 +253,7 @@ a {
 .titulomusica{
     display: flex;
     justify-content: center;
-    color: white;
+    color: #0DEBD4;
     font-family: headline;
     font-size: 50px;
     letter-spacing: 5px;
@@ -235,10 +273,12 @@ a {
     font-family: 'Dosis', sans-serif;
 }
 
+/* Footer */
 .direitos{
     background-color: black;
-    height: 4vh;
+    height: 3vh;
     margin-top: 40px;
+    padding: 6px;
 }
 
 .direitos p {
@@ -246,6 +286,5 @@ a {
     justify-content: center;
     color: white;
     font-size: 20px;
-    
 }
 

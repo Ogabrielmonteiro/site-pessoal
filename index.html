@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="sortcut icon" href="./imagem/logo.png" />; -->
+    <link rel="icon" href="./imagem/logo.png" type="image/png">
     <link rel="stylesheet" href="./CSS/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
     <title>The last of us</title>
@@ -12,24 +12,23 @@
 
 <body>
 
-
-
+    <!-- Navbar -->
     <div class="containerNav">
         <img src="./imagem/logo.png" class="navbarIcon">
         <ul class="botaoMenu">
             <li class="linavbar"> <a href="./index.html">Home</a></li>
             <li class="linavbar "><a href="#historia">Virus</a></li>
             <li class="linavbar"><a href="#personagem">Personagens</a></li>
-            <li class="linavbar login"><a href="">Login</a></li>
+            <li class="linavbar login"><a href="./login.html">Login</a></li>
         </ul>
     </div>
 
-
+    <!-- Video de ínicio -->
     <video autoplay loop muted class="videoBack">
-        <source src="./imagem/back.mp4" type="video/mp4">
+        <source src="./imagem/videoback.mp4" type="video/mp4">
     </video>
 
-
+    <!-- Sobre -->
     <div class="Sobre" id="historia">
         <img src="./imagem/virus.jpg" class="imgvirus">
         <div class="sobreGame">
@@ -94,9 +93,10 @@
     </div>
 
     <!-- imagem linha do tempo -->
-    <img src="./imagem/historia.jpg" class="historiimg">
-
-    <!-- Historia do game -->
+    <div class="divhistoria">
+        <img src="./imagem/historia.jpg" class="historiimg">
+    </div>
+    <!-- Historia dos personagens -->
 
     <!-- Joel -->
 
@@ -245,20 +245,21 @@
         </div>
     </div>
 
-    <!-- imagem linha do tempo -->
+    <!-- imagem curiosidades -->
     <div class="curiosidadediv"><img src="./imagem/curiosidades.jpg" class="curiosidadeimg"></div>
 
     <!-- Musica spotify -->
-        <h3 class="titulomusica">Música</h3>
+    <h3 class="titulomusica">Música</h3>
     <div class="paragrafomusica">
         <p>
-            Foi a música em que a personagem Ellie toca com seu violão no primeiro trailer lançado em 2018 na E3 e foi muito marcante pelaletra e seu  signigicados dentro do game.
+            Foi a música em que a personagem Ellie toca com seu violão no primeiro trailer lançado em 2018 na E3 e foi
+            muito marcante pela letra e seus signigicados dentro do game.
         </p>
     </div>
-        <div class="musica">
-            <p><iframe allow="encrypted-media" allowtransparency="true" frameborder="0" height="380"
-                    src="https://open.spotify.com/embed/track/3SLjTxHiqccvvBPtPwOcnn" width="800"></iframe></p>
-        </div>
+    <div class="musica">
+        <p><iframe allow="encrypted-media" allowtransparency="true" frameborder="0" height="380"
+                src="https://open.spotify.com/embed/track/3SLjTxHiqccvvBPtPwOcnn" width="800"></iframe></p>
+    </div>
     <!-- Footer -->
     <div class="direitos">
         <p>Copyright © 2013-2020 playstation.com</p>
