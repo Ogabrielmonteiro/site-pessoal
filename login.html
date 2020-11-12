@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./CSS/login.css">
     <title>Login/Cadastro</title>
 </head>
+
 <body>
     <!-- Navbar -->
     <div class="containerNav">
@@ -18,9 +20,51 @@
             <li class="linavbar login"><a href="./login.html">Login</a></li>
         </ul>
     </div>
-    
-    <div class="divlogin">
-        test 123
+
+    <!-- cadastro -->
+    <div class="alinCadatroLogin">
+        <div class="alinhamentoCadastro">
+            <div class="containerCadastro">
+                <div class="textoCadastro">
+                    <h1>Cadastro</h1>
+                    <div class="alinInput">
+                       <img src="./imagem/logo usuario.png" class="imglogo"> <input type="text" placeholder="Nick Name" class="nickName">
+                    </div>
+                    <div class="alinInput">
+                        <img src="./imagem/logo email.png" class="imglogo"> <input type="text" placeholder="Email" class="email">
+                    </div>
+                    <div class="alinInput">
+                        <img src="./imagem/senha logo.png" class="imglogo"> <input type="password" placeholder="Senha" class="senha">
+                    </div>
+                    <div class="alinInput">
+                        <img src="./imagem/senha logo.png" class="imglogo"> <input type="password" placeholder="Confirmação de senha" class="confirSenha">
+                    <div class="divCadastrar">
+                    <button class="btnCadastrar">Cadastrar</button>
+                    </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div class="alinhamentoLogin">
+            <div class="containerLogin">
+                <div class="textoLogin">
+                    <h1>Login</h1>
+                    <div class="alinInput">
+                        <img src="./imagem/logo usuario.png" class="imglogo"><input class="in_login" id="in_login"
+                            type="text" placeholder="Email">
+                    </div>
+                    <div class="alinInput">
+                        <img src="./imagem/senha logo.png" class="imglogo"> <input class="in_senha" id="in_senha"
+                            type="password" placeholder="Login">
+                        <div class="divLogar">
+                            <button class="btnlogar">Logar</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -28,4 +72,5 @@
         <p>Copyright © 2013-2020 playstation.com</p>
     </div>
 </body>
+
 </html>
