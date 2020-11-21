@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    cursor: url(https://cur.cursors-4u.net/others/oth-9/oth831.cur), auto !important;
+}
+
+body{
+    background: url(../imagem/fundo_key.png) no-repeat;
+    background-size: cover;
+}
+
+/* Fontes do site */
+@font-face{
+    font-family: headline;
+    src: url(../fonte/HeadlinerNo45DEMO.woff);
+}
+
+@font-face{
+    font-family: navfonte;
+    src: url(../fonte/Deadlist.woff);
+}
+
+@font-face{
+    font-family: textofonte;
+    src: url(../fonte/deadpackDEMO.woff);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerNav {
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.containerNav ul {
+    display: flex;
+}
+
+a {
+    color: white;
+    font-family: navfonte;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.linavbar {  
+    margin-left: 50px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 4px solid grey;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbarIcon {
+    width: 70px;
+}
+
+.linavbar:hover{
+    transition: 0.5s;
+    padding: 15px 35px;
+}
+
+/* barra lateral */
+.divAlinhamento{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.barraLatral{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    width: 25vh;
+    height: 12vh;
+    background-color: #1a1a1a;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.btnKey{
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    border: unset;
+    font-family: navfonte;
+    letter-spacing: 4px;
+}
+
+/* Div para mostrar chaves do game */
+.chaveGame{
+    display: flex;
+    height: 60vh;
+    width: 110vh;
+    margin-top: 13vh;
+    border-radius: 15px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.selectMascara{
+    padding: 30px;  
+}
+
+.selectSkin{
+    background-color: #1a1a1a;
+    color: white;
+    height: 30px;
+    font-family: textofonte;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.btnSkin{
+    height: 40px;
+    width: 130px;
+    font-size: 15px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    font-family: navfonte;
+    letter-spacing: 3px;
+}
+
+.imgSkin{
+    width: 60vh;
+    margin-top: 4vh;
+}
+
+.divTexto{
+    color: white;
+    background-color:  #1a1a1a;
+    margin-top: 20px;
+    border-radius: 15px;
+    height:18px;
+    width: 250px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.direitos{
+    background-color: black;
+    height: 28px;
+    margin-top: 13vh;
+}
+
+.direitos p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    padding: 1px;
+}
+
+.direitos p a{
+    font-family: Arial, Helvetica, sans-serif;
+}

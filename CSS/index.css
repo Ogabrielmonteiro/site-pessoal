@@ -67,7 +67,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 2;
+    z-index: 10;
     font-size: 20px;
 }
 
@@ -75,7 +75,7 @@ html {
     display: flex;
 }
 
-a {
+.botaoMenu a {
     color: white;
     font-family: navfonte;
     font-size: 20px;
@@ -100,6 +100,34 @@ a {
 .linavbar:hover{
     transition: 0.5s;
     padding: 15px 35px;
+}
+
+
+/* Seta animada */
+.imgVideo{
+    height: 80px;
+}
+.setaVideo{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 9;
+    animation: seta 1.2s infinite;
+}
+
+@keyframes seta{
+    0% {
+        bottom: 0%;
+    }
+    50%{
+        bottom: 8%;
+    }
+    100%{
+        bottom: 0%;
+    }
 }
 
 /* Video de inicio */
@@ -277,8 +305,7 @@ a {
 .direitos{
     background-color: black;
     height: 3vh;
-    margin-top: 40px;
-    padding: 6px;
+    margin-top: 5vh;
 }
 
 .direitos p {
@@ -286,5 +313,10 @@ a {
     justify-content: center;
     color: white;
     font-size: 20px;
+}
+
+.direitos p a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
