@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagem/logo.png" type="image/png">
+    <link rel="stylesheet" href="./CSS/login.css">
+    <title>Login/Cadastro</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="containerNav">
+        <img src="./imagem/logo.png" class="navbarIcon">
+        <ul class="botaoMenu">
+            <li class="linavbar"> <a href="./index.html">Home</a></li>
+            <li class="linavbar "><a href="./index.html #historia">Virus</a></li>
+            <li class="linavbar"><a href="./index.html #personagem">Personagens</a></li>
+            <li class="linavbar login"><a href="./login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- cadastro -->
+    <div class="alinCadatroLogin">
+        <div class="alinhamentoCadastro">
+            <div class="containerCadastro">
+                <div class="textoCadastro">
+                    <h1>Cadastro</h1>
+                    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                        <div class="alinInput">
+                            <img src="./imagem/logo usuario.png" class="imglogo"> <input type="text" name="nome"
+                                placeholder="Nick Name" class="nickName">
+                        </div>
+                        <div class="alinInput">
+                            <img src="./imagem/logo email.png" class="imglogo"> <input type="text" name="login" placeholder="Email"
+                                class="email">
+                        </div>
+                        <div class="alinInput">
+                            <img src="./imagem/senha logo.png" class="imglogo"> <input type="password" name="senha"
+                                placeholder="Senha" class="senha">
+                        </div>
+                        <div class="alinInput">
+                            <img src="./imagem/senha logo.png" class="imglogo"> <input type="password"
+                                placeholder="Confirmação de senha" class="confirSenha">
+                            <div class="divCadastrar">
+                                <button class="btnCadastrar" type="submit">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Login -->
+    <div class="alinhamentoLogin">
+        <div class="containerLogin">
+            <div class="textoLogin">
+                <h1>Login</h1>
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <div class="alinInput">
+                        <img src="./imagem/logo usuario.png" class="imglogo"><input class="in_login" name="login" id="in_login"
+                            type="text" placeholder="Email">
+                    </div>
+                    <div class="alinInput">
+                        <img src="./imagem/senha logo.png" class="imglogo"> <input class="in_senha" name="senha" id="in_senha"
+                            type="password" placeholder="Login">
+                        <div class="divLogar">
+                            <button class="btnlogar" type="submit">Logar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="direitos">
+        <p>Copyright © 2013-2020 <b> <a
+                    href="https://store.playstation.com/pt-br/product/UP9000-CUSA00552_00-THELASTOFUS00000?code=6atNYu&state=returning&cid=da3b081f-125e-41ea-b6e5-2eb35f9cdf1a">
+                    &nbsp playstation.com</b></a></p>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    // Login
+    function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'chave_game.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    // Cadastro
+    function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                // window.location.href='login.html';
+                alert("Cadastro feito com sucesso, faça o login")
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+            }
+        });
+
+        return false;
+    }
+</script>
