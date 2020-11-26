@@ -306,6 +306,7 @@ html {
     background-color: black;
     height: 3vh;
     margin-top: 5vh;
+    border-radius: 15px;
 }
 
 .direitos p {
