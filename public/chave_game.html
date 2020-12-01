@@ -40,7 +40,8 @@
                     <option value="5">Skin Mask</option>
                     <option value="6">Nightmare Skull Helmet</option>
                 </select>
-                <button onclick="resultado()" class="btnSkin"> Resultado </button>
+                <button onclick="resultado()" class="btnSkin" id="btn_skin" style="display: block;"> Pegar Skin
+                </button>
 
                 <div class="divIMG">
                     <img src="" id="imgSkin" class="imgSkin">
@@ -50,18 +51,19 @@
         </div>
     </div>
 
-    
+
 </body>
 
 </html>
 
 <script>
 
-    function aparecer(){
+    function aparecer() {
         divSkin.style.display = "block"
     }
 
     function resultado() {
+        btn_skin.style.display = "none"
         var skin = select_skin.value
         imgSkin.src = ""
 
@@ -94,7 +96,7 @@
             imgSkin.src = "https://media.discordapp.net/attachments/399625022051844097/781627466786668564/Nightmare_Skull_Helmet.jpg?width=700&height=432"
             div_texto.innerHTML = "8O12-41A8S-A85S-594D"
             div_texto.style.display = "block"
-        }else{
+        } else {
             alert("Escolha uma skin valida")
         }
     }

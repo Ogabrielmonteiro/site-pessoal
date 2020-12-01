@@ -222,8 +222,6 @@ html {
     display: flex;
     justify-content: center;
     color: #0DEBD4;
-    
-    
 }
 
 .imgHistoria{
@@ -301,23 +299,4 @@ html {
     font-family: 'Dosis', sans-serif;
 }
 
-/* Footer */
-.direitos{
-    background-color: black;
-    height: 3vh;
-    margin-top: 5vh;
-    border-radius: 15px;
-}
-
-.direitos p {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-}
-
-.direitos p a{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
 
